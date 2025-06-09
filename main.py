@@ -65,7 +65,7 @@ if __name__ == "__main__":
                 results = roll_dice(num_dice)
                 display_dice(results)
                 again = input("是否繼續擲骰子？(yes/no): ").lower()
-                if again != "yes":
+                if again not in ("yes", "y"):
                     print("遊戲結束！")
                     break
             else:
